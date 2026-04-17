@@ -54,10 +54,6 @@ export default function Home() {
       }
     } catch (e) {
       console.error("Failed to fetch state API. Is the backend running?", e);
-    } finally {
-      if (loading) {
-        setLoading(false);
-      }
     }
   };
 
